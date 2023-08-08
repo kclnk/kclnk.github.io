@@ -56,7 +56,7 @@ main {
 .main-sec main .invisible {
     transition: .9s;
     scale: 0.4;
-    opacity: 0.4;
+    opacity: 0;
     visibility: collapse;
 }
 
