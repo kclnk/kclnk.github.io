@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+
+/* Navigation Bar */
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.navigation {
+    scale: 1;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+.navigation .sticky {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1% 5%;
+    padding: 1% 2%;
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 50px;
+    backdrop-filter: blur(8px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 29px 0px;
+    scale: 0.85;
+}
+
+.navigation nav {
+    display: flex;
+    transition: .3s ease;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1% 0;
+    padding: 0.5% 0.5%;
+    scale: 0.9;
+    border-radius: 50px;
+}
+
+.navigation .logo a {
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: white;
+    padding: 0.3% 0.4%;
+    text-decoration: none;
+    background: -webkit-linear-gradient(45deg, #9a81b8, #7592c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navigation .list {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navigation ul li a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+
+}
+
+.navigation ul li:last-child a {
+    font-weight: 700;
+}
+
+.navigation ul li:last-child {
+    background-color: #000;
+    border: 3px solid #000;
+    transition: .3s;
+}
+
+.navigation ul li {
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 0.5rem 0.9rem;
+    transition: .3s;
+}
+
+.navigation ul li:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+.navigation ul li:last-child:hover {
+    background-color: rgba(0,0,0,0);
+    border-color: white;
+}
+
+
+/* main */
+.main-sec {
+    height: 88vh;
+    position: relative;
+}
+
+.main-sec main h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 8rem;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+}
+
+.main-sec .container {
+    height: 100%;
+}
+
+.main-sec main {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+.login {
+    transform: translateY(125px);
+    height: 110vh;
+    background-color: #2f3237;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-shadow: 50px 30px 120px 50px;
+}
+
+.wrapper {
+    background: linear-gradient(45deg, #464646, rgb(55, 22, 77));
+    width: 70%;
+    height: 70%;
+    color: white;
+    padding: 3% 5%;
+    margin-top: 7%;
+    border-radius: 40px;
+    scale: 0.7;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 70px;
+    margin: 50px 0;
+    position: relative;
+}
+
+.wrapper .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 40px;
+    font-size: 20px;
+    color: white;
+    padding-left: 4%;
+}
+
+.wrapper .input-box input::placeholder {
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    right: 35px;
+    transform: translateY(50%);
+    top: 20%;
+    scale: 1.5;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 50px 0;
+} 
+
+.remember-forgot label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    outline: none;
+    border: none; 
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.wrapper .register {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .input-box i {
+    color: #333232;
+}

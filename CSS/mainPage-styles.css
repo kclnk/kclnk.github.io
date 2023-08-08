@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+/* Navigation Bar */
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.navigation {
+    scale: 1;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+.navigation .sticky {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1% 5%;
+    padding: 1% 2%;
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 50px;
+    backdrop-filter: blur(8px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 29px 0px;
+    scale: 0.85;
+}
+
+.navigation nav {
+    display: flex;
+    transition: .3s ease;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1% 0;
+    padding: 0.5% 0.5%;
+    scale: 0.9;
+    border-radius: 50px;
+}
+
+.navigation .logo a {
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: white;
+    padding: 0.3% 0.4%;
+    text-decoration: none;
+    background: -webkit-linear-gradient(45deg, #9a81b8, #7592c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navigation .list {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navigation ul li a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+
+}
+
+.navigation ul li:last-child a {
+    font-weight: 700;
+}
+
+.navigation ul li:last-child {
+    background-color: #000;
+    border: 3px solid #000;
+    transition: .3s;
+}
+
+.navigation ul li {
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 0.5rem 0.9rem;
+    transition: .3s;
+}
+
+.navigation ul li:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+.navigation ul li:last-child:hover {
+    background-color: rgba(0,0,0,0);
+    border-color: white;
+}
+
+
+/* main */
+.main-sec {
+    height: 88vh;
+    position: relative;
+}
+
+.main-sec main h1 {
+    text-align: center;
+    -webkit-text-stroke: 1px white;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 7rem;
+}
+
+.main-sec .container {
+    height: 100%;
+}
+
+.main-sec main {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer-sec {
+    height: 13vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .7s ease;
+    z-index: 9999;
+}
+
+.footer-sec .rev, .fsticky .rev{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 15%;
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.footer-sec .links, .fsticky .links {
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.footer-sec .links ul, .fsticky .links ul {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.footer-sec .links ul a, .fsticky .links ul a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    transition: .4s ease;
+}
+
+.footer-sec .links ul a:hover, .fsticky .links ul a:hover{
+    color: rgb(65, 99, 100);
+}
+
+.fsticky {
+    opacity: 0;
+    
+    height: 13vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .2s ease;
+    z-index: 999;
+}
+
+.lorem {
+    transform: translateY(125px);
+    height: 150vh;
+    background-color: #2f3237;
+    box-shadow: 50px 30px 120px 50px;
+}
+
+.lorem .lorem-div {
+    color: white;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    font-size: 2rem;
+    padding: 20vh 0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+
+.lorem .lorem-div h1 {
+    font-size: 5rem;
+    padding-bottom: 30px;
+    font-weight: 800;
+}
+
+.lorem .lorem-div p {
+    padding-bottom: 30px;
+}
+
+footer {
+    height: 5%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f3237;
+}
+
+footer h3 {
+    padding-bottom: 2%;
+    opacity: 0.5;
+    color: #5d6269;
+}
