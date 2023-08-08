@@ -16,6 +16,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .navigation {
@@ -121,6 +123,7 @@ body {
     -webkit-text-stroke: 1px white;
     color: rgba(0, 0, 0, 0.3);
     font-size: 7rem;
+    overflow-y: hidden;
 }
 
 .main-sec .container {
@@ -202,6 +205,8 @@ body {
     height: 150vh;
     background-color: #2f3237;
     box-shadow: 50px 30px 120px 50px;
+    max-height: 150vh;
+    min-height: 80vh;
 }
 
 .lorem .lorem-div {
@@ -214,6 +219,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
+    overflow-y: hidden;
 }
 
 .lorem .lorem-div h1 {
@@ -224,6 +230,7 @@ body {
 
 .lorem .lorem-div p {
     padding-bottom: 30px;
+    overflow-y: hidden;
 }
 
 footer {
@@ -234,10 +241,12 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #2f3237;
+    overflow-y: hidden;
 }
 
 footer h3 {
     padding-bottom: 2%;
     opacity: 0.5;
     color: #5d6269;
+    overflow-y: hidden;
 }
